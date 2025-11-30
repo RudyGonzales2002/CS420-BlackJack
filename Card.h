@@ -10,4 +10,4 @@ namespace card {
     };
 } // card
 
-#endif //CS420_BLACKJACK_CARD_H
+#endif

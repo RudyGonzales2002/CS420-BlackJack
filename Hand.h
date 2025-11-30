@@ -1,5 +1,5 @@
 //
-// Created by rudy on 11/30/25.
+//
 //
 
 #ifndef CS420_BLACKJACK_HAND_H
@@ -10,4 +10,4 @@ namespace hand {
     };
 } // hand
 
-#endif //CS420_BLACKJACK_HAND_H
+#endif
