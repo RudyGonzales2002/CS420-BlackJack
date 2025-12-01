@@ -1,13 +1,17 @@
-//
-//
-//
+#ifndef HOUSE_H
+#define HOUSE_H
 
-#ifndef CS420_BLACKJACK_HOUSE_H
-#define CS420_BLACKJACK_HOUSE_H
+#include "GenericPlayer.h"
 
+// House is the dealer (computer)
+class House : public GenericPlayer
+{
+public:
+    House(const std::string& name = "House");
 
-class House {
+    virtual bool isHitting() const;  // house hits on 16 or less
+
+    void flipFirstCard();   // flips over the first card in the hand
 };
-
 
 #endif

@@ -1,13 +1,22 @@
-//
-//
-//
+#ifndef HAND_H
+#define HAND_H
 
-#ifndef CS420_BLACKJACK_HAND_H
-#define CS420_BLACKJACK_HAND_H
+#include <vector>
+#include "Card.h"
 
+// Hand represents a collection of card pointers
+class Hand
+{
+protected:
+    std::vector<Card*> cardVector;
 
-class Hand {
+public:
+    Hand();
+    virtual ~Hand();
+
+    void add(Card* cardPtr);   // add a card to the hand
+    void clearHand();          // delete all cards in the hand
+    int getTotal() const;      // compute total value of the hand
 };
-
 
 #endif
