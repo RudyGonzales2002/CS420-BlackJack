@@ -4,6 +4,7 @@
 #include "Hand.h"
 #include "GenericPlayer.h"
 
+
 // Deck is also a Hand, but with 52 cards and extra operations
 class Deck : public Hand
 {

@@ -2,9 +2,8 @@
 #include <iostream>
 
 House::House(const std::string& name)
-    : GenericPlayer(name)
 {
-    // base constructor already handles name
+    setName(name);
 }
 
 bool House::isHitting() const

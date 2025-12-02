@@ -7,7 +7,7 @@
 class House : public GenericPlayer
 {
 public:
-    House(const std::string& name = "House");
+    House(const std::string& name = "Dealer");
 
     virtual bool isHitting() const;  // house hits on 16 or less
 

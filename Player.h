@@ -1,12 +1,17 @@
-//
-//
-//
+#ifndef PLAYER_H
+#define PLAYER_H
+#include "GenericPlayer.h"
 
-#ifndef CS420_BLACKJACK_PLAYER_H
-#define CS420_BLACKJACK_PLAYER_H
+class Player : public GenericPlayer {
 
+    public:
+    Player(const string& name);
+    virtual ~Player();
+    virtual bool isHitting() const;
+    bool win() const;
+    bool lose() const;
+    bool push() const;
 
-class Player {
 };
 
 
